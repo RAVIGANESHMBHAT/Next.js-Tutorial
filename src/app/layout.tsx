@@ -18,7 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        style={{ display: "flex", flexDirection: "column", height: "100vh" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          height: "calc(100vh - 16px)",
+          gap: "16px",
+        }}
       >
         <header
           style={{
