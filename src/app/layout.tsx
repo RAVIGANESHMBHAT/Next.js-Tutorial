@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
         style={{
           display: "flex",
           flexDirection: "column",
-          height: "calc(100vh - 16px)",
+          height: "100vh",
           gap: "16px",
         }}
       >
@@ -32,7 +33,12 @@ export default function RootLayout({
             color: "black",
           }}
         >
-          <p>Header</p>
+          <div className="flex gap-4">
+            <Link href="/" className="text-blue-500">
+              Home
+            </Link>
+            <p>Header</p>
+          </div>
         </header>
 
         <div style={{ flex: 1, height: "100%", overflow: "auto" }}>
