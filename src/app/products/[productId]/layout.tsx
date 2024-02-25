@@ -8,7 +8,7 @@ function ProductDetailsLayout({
   return (
     <>
       {children}
-      <div>Featured Products</div>
+      <h3>Featured Products</h3>
     </>
   );
 }
